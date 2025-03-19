@@ -1,0 +1,9 @@
+train: ./data/yolo/train/images
+val: ./data/yolo/val/images
+test: ./data/yolo/test/images
+
+# Number of classes
+nc: 3
+
+# Class names (in order)
+names: ['player', 'ball', 'referee']
