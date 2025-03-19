@@ -1,0 +1,17 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
+
+# Logs and debug files
+*.log
+
+# Model weights and large files
+data/
+models/
+*.zip
+
+# Output files
+*.mp4
