@@ -1,9 +1,7 @@
-train: ./data/yolo/train/images
-val: ./data/yolo/val/images
-test: ./data/yolo/test/images
-
-# Number of classes
-nc: 3
-
-# Class names (in order)
-names: ['player', 'ball', 'referee']
+path: /Users/shaansekhon/Desktop/UTD/Spring 2025/Comp Vision/Project/data/tracking-2023
+train: train
+val: test
+train_labels: train/*/labels
+val_labels: test/*/labels
+nc: 4
+names: ['player', 'goalkeeper', 'ball', 'referee']
