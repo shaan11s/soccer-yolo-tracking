@@ -1,4 +1,4 @@
-path: /Users/shaansekhon/Desktop/UTD/Spring 2025/Comp Vision/Project/data/tracking-2023
+path: /Users/shaansekhon/Desktop/UTD/Spring 2025/Comp Vision/Project/data/tracking-2023/sampled
 train: train
 val: test
 train_labels: train/*/labels
