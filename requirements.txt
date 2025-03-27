@@ -1,5 +1,5 @@
 # Base Dependencies
-python==3.13.2
+#python==3.13.2
 ultralytics
 opencv-python
 numpy

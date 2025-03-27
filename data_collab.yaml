@@ -1,0 +1,10 @@
+path: /content/drive/MyDrive/fixed_data_from_.1_sample
+
+train: train
+val: test
+
+train_labels: train/*/fixed_labels
+val_labels: test/*/fixed_labels
+
+nc: 4
+names: ['player', 'goalkeeper', 'ball', 'referee']
