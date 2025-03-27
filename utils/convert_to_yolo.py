@@ -11,9 +11,16 @@ CLASS_MAP = {
 
 # Paths
 DATA_PATH = './data/tracking-2023/test' 
-DATA_PATH = './data/tracking-2023/train' 
+#DATA_PATH = './data/tracking-2023/train' 
 
 def load_track_id_map(gameinfo_path):
+
+    # [SUMMARY]
+        # This function parses the gameinfo.ini file and builds a dictionary
+        # that maps tracklet IDs to YOLO class IDs.
+        # It's a pre-processing step used to interpret what type of object
+        # each track ID refers to (player, ball, referee, etc.)
+
     track_id_map = {}
     with open(gameinfo_path, 'r') as f:
         for line in f:
@@ -34,12 +41,19 @@ def load_track_id_map(gameinfo_path):
     return track_id_map
 
 def convert_gt_to_yolo(gt_file, output_path, track_id_map, img_width=1920, img_height=1080):
+
+    # [SUMMARY]
+        # This function reads the ground truth bounding boxes from gt.txt,
+        # uses the track_id_map to determine the object class,
+        # and converts each box to YOLO format (class_id x_center y_center width height).
+        # The results are saved as .txt label files, one per frame, in the specified output folder.
+
     df = pd.read_csv(gt_file, header=None)
 
-    for _, row in df.iterrows():
+    for _, row in df.iterrows(): #underscore '_' is for ignoring row number
         frame_id, track_id, x, y, w, h, confidence = row[:7]
         class_id = track_id_map.get(int(track_id), -1)
-
+        #in the GT file we have extra rows of -1 which are essentially just ignored, dont worry about them.
         if class_id == -1:
             continue
         
@@ -61,6 +75,17 @@ def convert_gt_to_yolo(gt_file, output_path, track_id_map, img_width=1920, img_h
         print(f"Writing to {label_file} with class {class_id}")
 
 def process_all_sequences():
+
+    # [SUMMARY]
+        # This function loops through each sequence folder (like "SNMOT-060") inside the dataset directory.
+        # For each sequence, it builds the full path to important files: 
+        # - "gameinfo.ini" (for class mapping)
+        # - "gt/gt.txt" (for bounding box annotations)
+        # If both files exist, it builds a mapping from track IDs to class IDs (player, ball, etc.)
+        # and converts the ground truth boxes in gt.txt to YOLO format. (We use this box to compute loss function)
+        # The converted label files are saved inside a "labels/" folder within each sequence.
+
+
     for seq in os.listdir(DATA_PATH):
         seq_path = os.path.join(DATA_PATH, seq)
         if not os.path.isdir(seq_path):

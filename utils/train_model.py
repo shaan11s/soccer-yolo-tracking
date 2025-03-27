@@ -4,6 +4,10 @@ import gc
 import shutil
 from ultralytics import YOLO
 
+# [SUMMARY]
+# This was essentially borrowed from the ultralytics YOLO 8 Github repo (read me file)
+# Adjust as needed!
+
 # === CONFIGURATION ===
 data_path = 'data.yaml'
 initial_model = 'yolov8n.pt'

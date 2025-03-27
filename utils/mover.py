@@ -1,9 +1,13 @@
 import os
 import shutil
 
+# [SUMMARY]
+# Files were saved in the wrong places after conversion to yolo, so 
+# Use this to just move them to where they need to be
+
 # Define the source path (path to train folder)
 data_path = './data/tracking-2023/test' #
-data_path = './data/tracking-2023/train' 
+#data_path = './data/tracking-2023/train' 
 
 # Go into each SNMOT-* folder
 for seq in os.listdir(data_path):

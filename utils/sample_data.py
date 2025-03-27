@@ -2,6 +2,11 @@ import os
 import random
 import shutil
 
+# [SUMMARY]
+# So the training set was way too large, professor suggested
+#  using only 10% initially. Can adjust how much data (randomized) is being pulled
+# by adjusting "sample ratio" Line 53
+
 def sample_snmot_split(base_path, split='train', sample_ratio=0.1):
     input_base = os.path.join(base_path, split)
     output_base = os.path.join(base_path, 'sampled', split)
@@ -49,6 +54,7 @@ def sample_train_and_test(base_path, sample_ratio=0.1):
     for split in ['train', 'test']:
         sample_snmot_split(base_path, split=split, sample_ratio=sample_ratio)
 
-# ✅ Run the script
+# Run the script
 if __name__ == "__main__":
     sample_train_and_test(base_path='data/tracking-2023', sample_ratio=0.1)
+    
