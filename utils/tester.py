@@ -6,8 +6,8 @@ import os
     # working after conversaion 
 
 # Set paths to test 
-img_path = "data/tracking-2023/train/SNMOT-062/all_labels/SNMOT-062_000029.jpg"
-label_path = "data/tracking-2023/train/SNMOT-062/all_labels/SNMOT-062_000029.txt"
+img_path = "/Users/shaansekhon/Desktop/UTD/Spring 2025/Comp Vision/Project/fixed_data/test/SNMOT-121/fixed_labels/SNMOT-121_000002.jpg"
+label_path = "fixed_data/test/SNMOT-121/fixed_labels/SNMOT-121_000002.txt"
 
 # Image size
 img_width = 1920

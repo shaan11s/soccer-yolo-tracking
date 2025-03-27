@@ -7,9 +7,9 @@ import shutil
 #  using only 10% initially. Can adjust how much data (randomized) is being pulled
 # by adjusting "sample ratio" Line 53
 
-def sample_snmot_split(base_path, split='train', sample_ratio=0.1):
+def sample_snmot_split(base_path, split='train', sample_ratio=0.20):
     input_base = os.path.join(base_path, split)
-    output_base = os.path.join(base_path, 'sampled', split)
+    output_base = os.path.join(base_path, 'sampled2', split)
 
     for snmot_folder in os.listdir(input_base):
         folder_path = os.path.join(input_base, snmot_folder)
@@ -19,7 +19,7 @@ def sample_snmot_split(base_path, split='train', sample_ratio=0.1):
         print(f"📁 Sampling from {split}/{snmot_folder}...")
 
         # Images and labels are both in this folder:
-        all_labels_path = os.path.join(folder_path, 'all_labels')
+        all_labels_path = os.path.join(folder_path, 'fixed_labels')
         output_labels_path = os.path.join(output_base, snmot_folder, 'all_labels')
         os.makedirs(output_labels_path, exist_ok=True)
 
@@ -56,5 +56,5 @@ def sample_train_and_test(base_path, sample_ratio=0.1):
 
 # Run the script
 if __name__ == "__main__":
-    sample_train_and_test(base_path='data/tracking-2023', sample_ratio=0.1)
+    sample_train_and_test(base_path='data/tracking-2023/fixed_data_labels', sample_ratio=0.1)
     

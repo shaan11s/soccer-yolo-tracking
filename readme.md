@@ -33,3 +33,10 @@ data/
 │               ├── labels/     # YOLO format labels
 │               ├── gameinfo.ini
 │               ├── seqinfo.ini
+
+
+
+
+
+shortcuts for me 
+#source .venv/bin/activate
