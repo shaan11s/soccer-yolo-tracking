@@ -4,7 +4,7 @@ import shutil
 from ultralytics import YOLO
 
 # === CONFIGURATION ===
-data_path = '/content/soccer-yolo-tracking/data.yaml'
+data_path = '/content/soccer-yolo-tracking/data_collab.yaml'
 initial_model = 'yolov8n.pt'
 batch = 128  # Increase for A100 GPU
 imgsz = 640

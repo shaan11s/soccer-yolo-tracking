@@ -15,3 +15,7 @@ models/
 
 # Output files
 *.mp4
+*.mov
+
+# Model
+*.pt
