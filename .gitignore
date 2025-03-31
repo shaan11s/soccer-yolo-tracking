@@ -11,6 +11,7 @@ __pycache__/
 # Model weights and large files
 data/
 models/
+new-data-3-30/
 *.zip
 
 # Output files

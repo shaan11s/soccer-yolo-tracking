@@ -23,6 +23,6 @@ train_model.py/train_model_collab.py is used for training!
 
 
 
-shortcuts for me 
+## Shortcuts I forgot 
 #source .venv/bin/activate
 
