@@ -18,3 +18,7 @@ try:
     logging.info("Download complete!")
 except Exception as e:
     logging.error(f"Error downloading SoccerNet data: {e}")
+
+    #manual download was done later of additional dataset
+    #https://www.kaggle.com/datasets/borhanitrash/football-players-detection-dataset?resource=download
+

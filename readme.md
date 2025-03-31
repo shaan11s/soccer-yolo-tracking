@@ -12,31 +12,17 @@ Automatically generates YOLO-compatible labels
 
 ---
 
-## Dataset Structure
-The dataset is organized as follows:
-
-```plaintext
-data/
-├── tracking/
-│   ├── tracking-2023/
-│       ├── train/
-│           ├── SNMOT-060/
-│               ├── img1/       # Training images
-│               ├── gt/         # Ground truth files
-│               ├── labels/     # YOLO format labels
-│               ├── gameinfo.ini
-│               ├── seqinfo.ini
-│       ├── test/
-│           ├── SNMOT-116/
-│               ├── img1/       # Test images
-│               ├── gt/         # Ground truth files
-│               ├── labels/     # YOLO format labels
-│               ├── gameinfo.ini
-│               ├── seqinfo.ini
-
-
+## Utils
+Download the data used with convert_to_yolo.py.
+Use convert_to_yolo.py to prepare the dataset for the YOLOv8 model.
+Tester.py is available to maually check images with the correlating annotations visually.
+Use sample_data.py to create a new folder with whatever % of data you prefer to use.
+Labels from soccerNet were not accurate, use fixed_labels.py for improving them.
+mover.py moves the data files from seperate directories into one file, which is desired for training.
+train_model.py/train_model_collab.py is used for training! 
 
 
 
 shortcuts for me 
 #source .venv/bin/activate
+

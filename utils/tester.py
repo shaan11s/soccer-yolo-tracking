@@ -6,12 +6,12 @@ import os
     # working after conversaion 
 
 # Set paths to test 
-img_path = "/Users/shaansekhon/Desktop/UTD/Spring 2025/Comp Vision/Project/data/tracking-2023/fixed_data_labels/fixed_sampled_2/test/SNMOT-127/all_labels/SNMOT-127_000004.jpg"
-label_path = "/Users/shaansekhon/Desktop/UTD/Spring 2025/Comp Vision/Project/data/tracking-2023/fixed_data_labels/fixed_sampled_2/test/SNMOT-127/all_labels/SNMOT-127_000004.txt"
+img_path = "/Users/shaansekhon/Desktop/UTD/Spring 2025/Comp Vision/Project/Football-Player-Detection.v8-resized1280_tile2x2_aug3x.yolov8/train/images/0_pp_jpg.rf.7d9197db792cf28671b6cbe24110044c.jpg"
+label_path = "/Users/shaansekhon/Desktop/UTD/Spring 2025/Comp Vision/Project/Football-Player-Detection.v8-resized1280_tile2x2_aug3x.yolov8/train/labels/0_pp_jpg.rf.7d9197db792cf28671b6cbe24110044c.txt"
 
 # Image size
-img_width = 1920
-img_height = 1080
+img_width = 1280
+img_height = 1280
 
 # Load image
 image = cv2.imread(img_path)
