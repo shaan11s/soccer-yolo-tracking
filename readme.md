@@ -2,6 +2,8 @@
 
 This project uses **YOLOv8** to track soccer players, the ball, and referees in SoccerNet videos. The model is trained and validated using the SoccerNet dataset.
 
+![Example-photo-1](images/example-1.png)
+
 ## Features
 Tracks players, goalkeepers, referees, and the ball  
 Converts SoccerNet annotations into YOLO format  
