@@ -13,6 +13,7 @@ This project uses **YOLOv8** to detect and track soccer players, referees, and t
 - Supports both **training** and **validation** data pipelines
 - Includes label verification and correction scripts
 - Clean modular codebase for preprocessing, training, and testing
+- Tracks players and computes distance in pixels on video 
 
 ---
 
@@ -50,7 +51,17 @@ mAP50 hits ~0.83, and mAP50-95 reaches ~0.58.
 
 ---
 
+## Model_User.py
+
+- Includes option to use the model for object identification through photo and video
+- Tracking and distance calculation per player is included for video input
+
+---
+
 ## Developer Notes
+
+A quick Python scrypt to alter the Kaggle dataset was used to fit to the YAML.
+This was used and excluded. It simply adjusted the classification values of each file from a {player, ball} set to what we use in data.yaml.
 
 Some quick commands I kept forgetting:
 
