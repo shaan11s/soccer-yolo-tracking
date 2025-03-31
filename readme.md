@@ -30,21 +30,6 @@ mAP50 hits ~0.83, and mAP50-95 reaches ~0.58.
 
 ---
 
-## Structure
-
-Project/
-│
-├── data/                   # Original and converted SoccerNet data
-├── fix-this-data/          # Label cleanup
-├── runs/                   # YOLOv8 training output
-├── utils/                  # Helper scripts
-├── images/                 # Example input/output
-├── train_model.py          # Training script
-├── data.yaml               # YOLO class config
-└── README.md               # You’re here!
-
----
-
 ## Utilities
 
 | Script | Purpose |
