@@ -19,4 +19,4 @@ new-data-3-30/
 *.mov
 
 # Model
-*.pt
+#*.pt
