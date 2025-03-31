@@ -60,7 +60,7 @@ mAP50 hits ~0.83, and mAP50-95 reaches ~0.58.
 
 ## Data Notes
 
-- Data originally had a large mixup of labels. Many players were marked as balls, and many balls as players. If there was an object 25% or less the size of the average player in a frame, and it was not marked as the ball while another object was then it was swapped! This made the data usable even with various flaws in the annotations.
+- The original dataset contained significant labeling inconsistencies, with many players mislabeled as balls and vice versa. To address this, a correction rule was applied: if an object in a frame was 25% or less the size of the average player and was not labeled as the ball—while a larger object was incorrectly labeled as such—the labels were swapped. This heuristic allowed flawed annotations to be corrected, making the dataset more reliable for training.
 
 ---
 
