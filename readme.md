@@ -1,6 +1,6 @@
-# SoccerNet YOLOv8 Tracking Project
+# Soccer YOLOv8 Tracking Project
 
-This project uses **YOLOv8** to detect and track soccer players, referees, and the ball in match footage from the **SoccerNet** dataset. The goal is to enable free and accurate soccer analytics through computer vision.
+This project uses **YOLOv8** to detect and track soccer players, referees, and the ball in match footage from a **SoccerNet** and **Kaggle** dataset. The goal is to enable free and accurate soccer analytics through computer vision.
 
 ![Working Example](images/working-example-1.png)
 
