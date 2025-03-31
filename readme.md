@@ -58,10 +58,18 @@ mAP50 hits ~0.83, and mAP50-95 reaches ~0.58.
 
 ---
 
+## Data Notes
+
+- Data originally had a large mixup of labels. Many players were marked as balls, and many balls as players. If there was an object 25% or less the size of the average player in a frame, and it was not marked as the ball while another object was then it was swapped! This made the data usable even with various flaws in the annotations.
+
+---
+
 ## Developer Notes
 
 A quick Python scrypt to alter the Kaggle dataset was used to fit to the YAML.
 This was used and excluded. It simply adjusted the classification values of each file from a {player, ball} set to what we use in data.yaml.
+
+TODO: could implement a function where someonem anually enters field values for clip for a more accureate representation of distance covered. Difficult to do without specifically limiting to a type of angle etc. 
 
 Some quick commands I kept forgetting:
 
