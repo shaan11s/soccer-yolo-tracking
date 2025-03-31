@@ -1,3 +1,6 @@
+
+# THIS YAML IS FOR LOCAL MACHINE
+
 path: /Users/shaansekhon/Desktop/UTD/Spring 2025/Comp Vision/Project/data/tracking-2023/sampled
 train: train
 val: test
