@@ -2,7 +2,7 @@
 
 This project uses **YOLOv8** to detect and track soccer players, referees, and the ball in match footage from a **SoccerNet** and **Kaggle** dataset. The goal is to enable free and accurate soccer analytics through computer vision.
 
-![alt text](<safespeak-readme-photo copy.png>)
+![alt text](<Screenshot 2025-04-02 at 5.49.08 PM.png>)
 ---
 
 ## Features
