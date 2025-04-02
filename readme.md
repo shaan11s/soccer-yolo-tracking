@@ -68,7 +68,7 @@ mAP50 hits ~0.83, and mAP50-95 reaches ~0.58.
 A quick Python scrypt to alter the Kaggle dataset was used to fit to the YAML.
 This was used and excluded. It simply adjusted the classification values of each file from a {player, ball} set to what we use in data.yaml.
 
-TODO: could implement a function where someonem anually enters field values for clip for a more accureate representation of distance covered. Difficult to do without specifically limiting to a type of angle etc. 
+TODO: could implement a function where someone manually enters field values for clip for a more accureate representation of distance covered. Difficult to do without specifically limiting to a type of angle etc. 
 
 Some quick commands I kept forgetting:
 
