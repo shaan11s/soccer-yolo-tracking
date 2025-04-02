@@ -27,7 +27,7 @@ def load_track_id_map(gameinfo_path):
             if line.startswith("trackletID"):
                 parts = line.strip().split("=")[1].split(";")
                 try:
-                    track_id = int(parts[1])
+                    track_id = int(line.strip().split("=")[0].split("_")[1])
                     if 'player' in parts[0]:
                         track_id_map[track_id] = CLASS_MAP['player']
                     elif 'goalkeeper' in parts[0]:

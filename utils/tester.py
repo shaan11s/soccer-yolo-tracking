@@ -6,15 +6,16 @@ import os
     # working after conversaion 
 
 # Set paths to test 
-img_path = "/Users/shaansekhon/Desktop/UTD/Spring 2025/Comp Vision/Project/Football-Player-Detection.v8-resized1280_tile2x2_aug3x.yolov8/train/images/0_pp_jpg.rf.7d9197db792cf28671b6cbe24110044c.jpg"
-label_path = "/Users/shaansekhon/Desktop/UTD/Spring 2025/Comp Vision/Project/Football-Player-Detection.v8-resized1280_tile2x2_aug3x.yolov8/train/labels/0_pp_jpg.rf.7d9197db792cf28671b6cbe24110044c.txt"
+img_path = "/Users/shaansekhon/Desktop/UTD/Spring 2025/Comp Vision/Project/data/tracking-2023/test/SNMOT-116/img1/000001.jpg"
+label_path = "/Users/shaansekhon/Desktop/UTD/Spring 2025/Comp Vision/Project/data/tracking-2023/test/SNMOT-116/labels/000001.txt"
 
 # Image size
-img_width = 1280
-img_height = 1280
+img_width = 1920
+img_height = 1080
 
 # Load image
 image = cv2.imread(img_path)
+print(image.shape)
 
 # Class names (just for visualization)
 class_names = {0: 'Player', 1: 'Goalkeeper', 2: 'Ball', 3: 'Referee'}
