@@ -17,7 +17,7 @@ train_output_dir = os.path.join('runs/detect', train_name)
 weights_path = os.path.join(train_output_dir, 'weights', 'last.pt')
 
 # === START TRAINING ===
-print(f"🚀 Starting full training from: {initial_model}")
+print(f"Starting full training from: {initial_model}")
 model = YOLO(initial_model)
 
 model.train(
